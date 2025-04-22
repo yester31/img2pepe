@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Pepe Image Replacer",
+  "version": "1.0",
+  "description": "웹사이트의 모든 이미지를 페페 이미지로 바꿉니다",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
